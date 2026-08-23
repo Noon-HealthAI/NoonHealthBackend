@@ -18,9 +18,8 @@ app = FastAPI(
 @app.get("/")
 def root():
     return {
-        "status": "Noon.HealthAI Running"
+        "status": "RENDER_TEST_123"
     }
-
 
 app.include_router(questions.router)
 app.include_router(surveys.router)
